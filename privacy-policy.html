@@ -1,0 +1,461 @@
+<title>Privacy Policy</title>
+<style>
+  :root {
+    --bg: #FAFAF8;
+    --surface: #FFFFFF;
+    --text: #1C1E1B;
+    --text-secondary: #5B615C;
+    --text-tertiary: #8B928C;
+    --border: rgba(28, 30, 27, 0.10);
+    --accent: #1E9E73;
+    --accent-wash: rgba(30, 158, 115, 0.10);
+    --callout-bg: #F1F6F3;
+    --callout-border: rgba(30, 158, 115, 0.25);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171A;
+      --surface: #1C1F22;
+      --text: #ECEDEA;
+      --text-secondary: #A7ACA7;
+      --text-tertiary: #767C77;
+      --border: rgba(255, 255, 255, 0.10);
+      --accent: #3FCB9A;
+      --accent-wash: rgba(63, 203, 154, 0.14);
+      --callout-bg: #1B2622;
+      --callout-border: rgba(63, 203, 154, 0.28);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #15171A;
+    --surface: #1C1F22;
+    --text: #ECEDEA;
+    --text-secondary: #A7ACA7;
+    --text-tertiary: #767C77;
+    --border: rgba(255, 255, 255, 0.10);
+    --accent: #3FCB9A;
+    --accent-wash: rgba(63, 203, 154, 0.14);
+    --callout-bg: #1B2622;
+    --callout-border: rgba(63, 203, 154, 0.28);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 96px;
+  }
+
+  .doc {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  header.doc-head {
+    padding: 56px 0 28px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 750;
+    letter-spacing: -0.015em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .effective-date {
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    margin: 0;
+  }
+
+  .intro {
+    font-size: 16.5px;
+    color: var(--text-secondary);
+    max-width: 62ch;
+  }
+
+  .intro strong { color: var(--text); }
+
+  nav.toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 28px 0 40px;
+  }
+
+  nav.toc p {
+    margin: 0 0 10px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+  }
+
+  nav.toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    column-gap: 24px;
+  }
+
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+
+  nav.toc a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  nav.toc a:hover, nav.toc a:focus-visible { color: var(--accent); }
+
+  section {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 0 0 14px;
+    scroll-margin-top: 24px;
+  }
+
+  h2 .num {
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    margin-right: 8px;
+  }
+
+  h3 {
+    font-size: 15.5px;
+    font-weight: 700;
+    margin: 20px 0 8px;
+  }
+
+  p { margin: 0 0 14px; max-width: 65ch; }
+
+  ul, ol.plain { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 6px; max-width: 62ch; }
+
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .callout {
+    background: var(--callout-bg);
+    border: 1px solid var(--callout-border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 14.5px;
+    margin: 16px 0;
+  }
+
+  .callout p:last-child { margin-bottom: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 16px;
+    font-size: 14.5px;
+  }
+
+  .table-wrap { overflow-x: auto; }
+
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  th {
+    color: var(--text-tertiary);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  footer.doc-foot {
+    padding-top: 36px;
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+
+  footer.doc-foot a { color: var(--accent); }
+
+  @media (max-width: 480px) {
+    nav.toc ol { columns: 1; }
+  }
+</style>
+
+<div class="doc">
+  <header class="doc-head">
+    <p class="eyebrow">BlobFit</p>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective August 25, 2026</p>
+  </header>
+
+  <p class="intro">
+    BlobFit is a fitness and nutrition tracking app built by an individual developer
+    (Kyle Louie, referred to as "we" or "us" below). This page explains
+    <strong>exactly</strong> what BlobFit collects, why, who it's shared with, and how
+    you can delete it — written to match what the app actually does, not a generic
+    template.
+  </p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#information-we-collect">Information We Collect</a></li>
+      <li><a href="#how-we-use-it">How We Use Your Information</a></li>
+      <li><a href="#third-parties">Third Parties We Share Data With</a></li>
+      <li><a href="#storage-security">Data Storage &amp; Security</a></li>
+      <li><a href="#your-choices">Your Choices &amp; Rights</a></li>
+      <li><a href="#retention">Data Retention</a></li>
+      <li><a href="#children">Children's Privacy</a></li>
+      <li><a href="#international">International Users</a></li>
+      <li><a href="#changes">Changes to This Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <section id="information-we-collect">
+    <h2><span class="num">1.</span>Information We Collect</h2>
+
+    <h3>Account information</h3>
+    <p>
+      You sign in with Sign in with Apple. We receive whatever Apple provides based on
+      your choices there (your name, and either your real email or Apple's private
+      relay address). Your session is managed by Supabase Auth; we never see or store
+      a password, since Sign in with Apple doesn't use one.
+    </p>
+
+    <h3>Health &amp; fitness data</h3>
+    <p>This is the core of what BlobFit tracks, and we treat it as sensitive:</p>
+    <ul>
+      <li>Daily step count (read from Apple Health, with your permission)</li>
+      <li>Body weight and weight history</li>
+      <li>Workout sessions, exercises, sets, reps, and weight lifted</li>
+      <li>Food and nutrition logs, including calories and macros</li>
+      <li>Water intake</li>
+      <li>Manually logged activities (e.g. a run or bike ride you tell us about)</li>
+    </ul>
+
+    <h3>Meal photos</h3>
+    <p>
+      If you use the "scan a meal photo" feature, that photo is sent (as a one-time
+      request, not stored by us afterward) to OpenAI's vision model to estimate
+      nutrition information. See <a href="#third-parties">Third Parties</a> below.
+    </p>
+
+    <h3>Usage &amp; diagnostic data</h3>
+    <p>
+      We use TelemetryDeck for basic, anonymized usage analytics (e.g. which screens
+      are opened, whether a feature is used) so we know what to improve. Your health
+      and fitness data is never included in analytics events — that's a hard rule in
+      how the app is built, not just a policy statement.
+    </p>
+
+    <h3>Content you create</h3>
+    <p>
+      Workout templates and programs, custom exercises, saved meals, and any food
+      items you enter manually.
+    </p>
+  </section>
+
+  <section id="how-we-use-it">
+    <h2><span class="num">2.</span>How We Use Your Information</h2>
+    <ul>
+      <li>To provide the app's core functionality — tracking your workouts,
+        nutrition, and progress over time, and syncing it across your devices</li>
+      <li>To power AI-assisted features you choose to use (meal photo scanning,
+        activity MET estimation, AI food lookup)</li>
+      <li>To maintain your account and process subscription entitlements</li>
+      <li>To understand aggregate feature usage and fix problems</li>
+      <li>To communicate with you about your account (e.g. a trial-ending reminder),
+        if you've enabled notifications</li>
+      <li><strong>Apple HealthKit data:</strong> information read from Apple Health
+        (such as step count) is used exclusively to display your fitness progress
+        within the app. We never sell Apple Health data, share it with third
+        parties, or use it for advertising, marketing, or user profiling.</li>
+    </ul>
+    <div class="callout">
+      <p>
+        We do not sell your data. We do not use your health or fitness data for
+        advertising, and BlobFit doesn't show ads.
+      </p>
+    </div>
+  </section>
+
+  <section id="third-parties">
+    <h2><span class="num">3.</span>Third Parties We Share Data With</h2>
+    <p>
+      Each of these only receives the minimum needed for its specific job — never
+      your full account or health history in bulk.
+    </p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Service</th><th>What it receives</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Apple (Sign in with Apple, App Store)</td>
+            <td>Your Apple ID sign-in, subscription/payment processing</td>
+            <td>Authentication; all billing is handled entirely by Apple — we never
+              receive your card details</td>
+          </tr>
+          <tr>
+            <td>Supabase</td>
+            <td>Your account and synced app data</td>
+            <td>Our database and authentication provider — this is where your data
+              actually lives</td>
+          </tr>
+          <tr>
+            <td>OpenAI</td>
+            <td>A meal photo (for scanning), or a short activity name (for MET
+              estimation) — sent per-request, not in bulk</td>
+            <td>AI-powered meal photo analysis and custom activity calorie
+              estimation. Per OpenAI's API data usage policy, data sent via the API
+              is not used to train their models; it's retained up to 30 days for
+              abuse monitoring, then deleted.</td>
+          </tr>
+          <tr>
+            <td>Exa</td>
+            <td>A food name you searched for</td>
+            <td>Last-resort AI food lookup when our regular food databases have no
+              match. Subject to <a href="https://exa.ai/privacy-policy">Exa's own
+              privacy policy</a>.</td>
+          </tr>
+          <tr>
+            <td>USDA FoodData Central / Open Food Facts</td>
+            <td>Food search terms or a scanned barcode</td>
+            <td>Public nutrition databases used for manual food search and barcode
+              scanning — no account information is sent</td>
+          </tr>
+          <tr>
+            <td>TelemetryDeck</td>
+            <td>Anonymized usage events (never health/fitness data)</td>
+            <td>Understanding feature usage</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="storage-security">
+    <h2><span class="num">4.</span>Data Storage &amp; Security</h2>
+    <ul>
+      <li>All data in transit uses HTTPS/TLS — no plaintext requests, anywhere in
+        the app</li>
+      <li>Your data is stored in Supabase (PostgreSQL) with Row Level Security
+        enabled on every table, enforced by the database itself — your account can
+        only ever read or write its own rows, not anyone else's</li>
+      <li>Your authentication token is stored in the iOS Keychain, never in
+        plain app storage</li>
+      <li>API keys for AI features (OpenAI, Exa) are never embedded in the app
+        itself — they're held server-side, behind functions that verify you're a
+        genuinely signed-in user before processing a request</li>
+    </ul>
+  </section>
+
+  <section id="your-choices">
+    <h2><span class="num">5.</span>Your Choices &amp; Rights</h2>
+    <ul>
+      <li><strong>Delete your account:</strong> Profile → Delete Account, inside the
+        app. This permanently deletes your account and all associated data —
+        workouts, food logs, weight history, everything. It's irreversible, and
+        we mean permanently: your data is not archived or retained after deletion.</li>
+      <li><strong>Health data access:</strong> control BlobFit's access to Apple
+        Health anytime in iOS Settings → Privacy &amp; Security → Health.</li>
+      <li><strong>Sign out:</strong> available in Profile — clears your data from
+        that device without deleting your account.</li>
+      <li><strong>AI features are opt-in:</strong> meal photo scanning, AI food
+        lookup, and custom activity estimation only run when you actively use
+        them.</li>
+    </ul>
+    <div class="callout">
+      <p>
+        <strong>One deliberate exception:</strong> if you've contributed a food item
+        to BlobFit's shared community food database (via manual food entry), that
+        entry stays searchable for other users after you delete your account — since
+        someone else may already be relying on it — but it's stripped of any link
+        back to you. Nothing else is retained.
+      </p>
+    </div>
+  </section>
+
+  <section id="retention">
+    <h2><span class="num">6.</span>Data Retention</h2>
+    <p>
+      We keep your data for as long as your account is active, so the app can
+      function (showing your history, computing trends, etc.). If you delete your
+      account, your data is deleted immediately and permanently, with the single
+      shared-food-database exception described above.
+    </p>
+  </section>
+
+  <section id="children">
+    <h2><span class="num">7.</span>Children's Privacy</h2>
+    <p>
+      BlobFit is not directed at children under 13, and we do not knowingly collect
+      information from them. If you believe a child has created an account, contact
+      us and we'll delete it.
+    </p>
+  </section>
+
+  <section id="international">
+    <h2><span class="num">8.</span>International Users</h2>
+    <p>
+      BlobFit is available worldwide via the App Store. Wherever you're located,
+      your data is processed as described in this policy. If you're in the EU/EEA,
+      UK, or California, you may have additional rights under GDPR or CCPA (such as
+      data portability or a formal right to erasure) — the account deletion feature
+      above satisfies the erasure request in practice; contact us for anything
+      beyond that.
+    </p>
+  </section>
+
+  <section id="changes">
+    <h2><span class="num">9.</span>Changes to This Policy</h2>
+    <p>
+      If this policy changes in a way that meaningfully affects how your data is
+      handled, we'll update the effective date above and, where practical, let you
+      know inside the app.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2><span class="num">10.</span>Contact Us</h2>
+    <p>
+      Questions about this policy or your data: <a href="mailto:kyleklouie@gmail.com">kyleklouie@gmail.com</a>
+    </p>
+  </section>
+
+  <footer class="doc-foot">
+    <p>BlobFit — Privacy Policy — Effective August 25, 2026</p>
+  </footer>
+</div>

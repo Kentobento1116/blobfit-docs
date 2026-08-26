@@ -1,0 +1,236 @@
+<title>Support</title>
+<style>
+  :root {
+    --bg: #FAFAF8;
+    --surface: #FFFFFF;
+    --text: #1C1E1B;
+    --text-secondary: #5B615C;
+    --text-tertiary: #8B928C;
+    --border: rgba(28, 30, 27, 0.10);
+    --accent: #1E9E73;
+    --accent-wash: rgba(30, 158, 115, 0.10);
+    --callout-bg: #F1F6F3;
+    --callout-border: rgba(30, 158, 115, 0.25);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171A;
+      --surface: #1C1F22;
+      --text: #ECEDEA;
+      --text-secondary: #A7ACA7;
+      --text-tertiary: #767C77;
+      --border: rgba(255, 255, 255, 0.10);
+      --accent: #3FCB9A;
+      --accent-wash: rgba(63, 203, 154, 0.14);
+      --callout-bg: #1B2622;
+      --callout-border: rgba(63, 203, 154, 0.28);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #15171A;
+    --surface: #1C1F22;
+    --text: #ECEDEA;
+    --text-secondary: #A7ACA7;
+    --text-tertiary: #767C77;
+    --border: rgba(255, 255, 255, 0.10);
+    --accent: #3FCB9A;
+    --accent-wash: rgba(63, 203, 154, 0.14);
+    --callout-bg: #1B2622;
+    --callout-border: rgba(63, 203, 154, 0.28);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 96px;
+  }
+
+  .doc {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  header.doc-head {
+    padding: 56px 0 28px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 38px);
+    font-weight: 750;
+    letter-spacing: -0.015em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+
+  .intro {
+    font-size: 16.5px;
+    color: var(--text-secondary);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  /* Contact card -- the one thing everyone actually came here for */
+  .contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+    background: var(--callout-bg);
+    border: 1px solid var(--callout-border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 28px 0 44px;
+  }
+
+  .contact-card .label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 4px;
+  }
+
+  .contact-card .email {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .email-btn {
+    background: var(--accent);
+    color: #fff !important;
+    font-weight: 600;
+    font-size: 14.5px;
+    padding: 11px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-tertiary);
+    margin: 0 0 16px;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 44px;
+  }
+
+  .faq-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+
+  .faq-item .q {
+    font-size: 15.5px;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  .faq-item .a {
+    font-size: 14.5px;
+    color: var(--text-secondary);
+    margin: 0;
+  }
+
+  .faq-item .a code {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 13px;
+    background: var(--accent-wash);
+    color: var(--accent);
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+
+  .faq-item .a a {
+    color: var(--accent);
+  }
+
+  footer.doc-foot {
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+
+  footer.doc-foot a { color: var(--accent); }
+</style>
+
+<div class="doc">
+  <header class="doc-head">
+    <p class="eyebrow">BlobFit</p>
+    <h1>Support</h1>
+    <p class="intro">Questions, bugs, or anything else about BlobFit — here's how to reach us, plus quick answers to the things people ask most.</p>
+  </header>
+
+  <div class="contact-card">
+    <div>
+      <p class="label">Contact</p>
+      <a class="email" href="mailto:kyleklouie@gmail.com">kyleklouie@gmail.com</a>
+    </div>
+    <a class="email-btn" href="mailto:kyleklouie@gmail.com">Email Us</a>
+  </div>
+
+  <h2>Common Questions</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <p class="q">How do I delete my account and all my data?</p>
+      <p class="a">In the app: <code>Profile → Delete Account</code>. This permanently deletes your account and everything tied to it — workouts, food logs, weight history, all of it — and can't be undone. See our <a href="privacy-policy.html">Privacy Policy</a> for the full details on what's deleted.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">How do I cancel or change my subscription?</p>
+      <p class="a">In the app: <code>Profile → Manage Subscription</code> opens Apple's own subscription management sheet, where you can change plans or cancel anytime. Your subscription is billed and managed entirely by Apple — we never see your payment details.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">I got a new phone — how do I get my subscription back?</p>
+      <p class="a">Sign in with the same account, then in the app: <code>Profile → Restore Purchases</code>. This re-syncs your subscription from your Apple ID; no need to pay again if it's already active.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">BlobFit isn't reading my steps from Apple Health</p>
+      <p class="a">Check <code>iOS Settings → Privacy &amp; Security → Health → BlobFit</code> and make sure Step Count access is turned on. iOS keeps Health permissions in this separate location rather than the app's own permission list.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">I found a bug, or have a feature request</p>
+      <p class="a">Email us at <a href="mailto:kyleklouie@gmail.com">kyleklouie@gmail.com</a> — the more detail (what you were doing, what you expected, what happened instead), the faster we can track it down.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Where can I read your Privacy Policy?</p>
+      <p class="a">Right here: <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    </div>
+  </div>
+
+  <footer class="doc-foot">
+    <p>BlobFit — <a href="mailto:kyleklouie@gmail.com">kyleklouie@gmail.com</a> — <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+</div>
